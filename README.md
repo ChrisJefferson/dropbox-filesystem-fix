@@ -1,6 +1,8 @@
 # Dropbox filesystem fix for Linux [![Build Status](https://travis-ci.org/dark/dropbox-filesystem-fix.svg?branch=master)](https://travis-ci.org/dark/dropbox-filesystem-fix)
 
-Dropbox confirmed recently ([link](https://www.dropboxforum.com/t5/Syncing-and-uploads/Dropbox-client-warns-me-that-it-ll-stop-syncing-in-Nov-why/td-p/290058)) that it will drop support for several Linux filesystems; its client will refuse to sync if an unsupported filesystem is encountered.
+You might not require this project any more. Dropbox has re-enabled support for ZFS (on 64-bit systems only), XFS (on 64bit systems only), Btrfs and eCryptFS ([link](https://hardware.slashdot.org/story/19/07/22/1534200/dropbox-brings-back-support-for-zfs-xfs-btrfs-and-ecryptfs-on-linux)). This fix still allows other filesystems, older versions of Dropbox, and is around in case Dropbox disable filesystems again in future.
+
+Dropbox previously confirmed ([link](https://www.dropboxforum.com/t5/Syncing-and-uploads/Dropbox-client-warns-me-that-it-ll-stop-syncing-in-Nov-why/td-p/290058)) that it will drop support for several Linux filesystems; its client will refuse to sync if an unsupported filesystem is encountered.
 
 **This project fixes the filesystem detection in the Linux client to restore the sync capability.**
 
